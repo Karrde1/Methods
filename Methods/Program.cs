@@ -9,15 +9,15 @@ namespace Methods
 {
     class Program
     {
-        public static void Main(string[] args)
+         static void Main(string[] args)
         {
-            Console.WriteLine("Greetings User! \n Please Enter your Name!");
-            Console.ReadKey(true);
-            Console.WriteLine("Please Enter Your Name");
+
 
             try
             {
+                Console.WriteLine("Greetings User! \n Please Enter your Name!");
                 string UserInput = Console.ReadLine();
+                HelloUser();
             }
 
             catch
@@ -29,11 +29,16 @@ namespace Methods
 
         }
 
+        private void HelloUser(string UserInput)
+
+        {
+            string UserName = UserInput;
+            Console.WriteLine("Hello" + UserName);
+            Console.ReadKey(true);
+
         }
     }
 
-private void UserReturn()
-{
-    Console.WriteLine("Hello" + UserInput.ToString());
 
 }
+
