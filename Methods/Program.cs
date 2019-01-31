@@ -12,14 +12,16 @@ namespace Methods
          static void Main(string[] args)
         {
 
-
+            // Initiate the try block
             try
             {
+                // Greet the user then assign UserInput variable to whatever the user enters
                 Console.WriteLine("Greetings User! \n Please Enter your Name!");
                 UserInput(Console.ReadLine());
                 
             }
 
+            // Should the user somehow fail to enter their name, execute the catch 
             catch
             {
                 Console.WriteLine("Please Enter a Valid Name and Try Again");
@@ -29,9 +31,12 @@ namespace Methods
 
         }
 
+        // Here, we are creating an argument for this method to return the value of UserInput previously defined in the other method
+        // Because this method is static, we only want it to run once and be complete.
         static void UserInput(string UserName)
 
         {
+            // Display the users name with a greeting
             Console.WriteLine("Hello " + UserName);
             Console.ReadKey(true);
 
