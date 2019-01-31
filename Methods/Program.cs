@@ -16,8 +16,8 @@ namespace Methods
             try
             {
                 Console.WriteLine("Greetings User! \n Please Enter your Name!");
-                string UserInput = Console.ReadLine();
-                HelloUser();
+                UserInput(Console.ReadLine());
+                
             }
 
             catch
@@ -29,11 +29,10 @@ namespace Methods
 
         }
 
-        private void HelloUser(string UserInput)
+        static void UserInput(string UserName)
 
         {
-            string UserName = UserInput;
-            Console.WriteLine("Hello" + UserName);
+            Console.WriteLine("Hello " + UserName);
             Console.ReadKey(true);
 
         }
